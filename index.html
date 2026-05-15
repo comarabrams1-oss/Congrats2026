@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Congratulations, Ghala</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Georgia, 'Times New Roman', serif;
+      background:
+        radial-gradient(circle at top, rgba(255, 233, 180, 0.28), transparent 35%),
+        linear-gradient(135deg, #130f1f, #24162f 45%, #3b1f32);
+      color: #fff7e8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 850px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 28px;
+      padding: 42px 30px;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(14px);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: -80px auto auto -80px;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: rgba(255, 215, 128, 0.18);
+      filter: blur(4px);
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      right: -60px;
+      bottom: -60px;
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      background: rgba(255, 160, 190, 0.14);
+      filter: blur(4px);
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .small-title {
+      font-size: 0.9rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #f4d28e;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(2.7rem, 8vw, 5.7rem);
+      line-height: 0.96;
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+
+    .subtitle {
+      font-size: clamp(1rem, 3vw, 1.35rem);
+      color: #f2dfc3;
+      margin-bottom: 34px;
+    }
+
+    .message {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: clamp(1.05rem, 2.7vw, 1.35rem);
+      line-height: 1.75;
+      color: #fff3df;
+      text-align: left;
+      background: rgba(0, 0, 0, 0.18);
+      border-radius: 22px;
+      padding: 28px;
+    }
+
+    .signature {
+      margin-top: 30px;
+      font-size: 1.1rem;
+      color: #f4d28e;
+    }
+
+    .footer {
+      margin-top: 22px;
+      font-size: 0.85rem;
+      color: rgba(255, 247, 232, 0.62);
+    }
+
+    @media (max-width: 560px) {
+      .card {
+        padding: 34px 18px;
+        border-radius: 22px;
+      }
+
+      .message {
+        padding: 22px;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="content">
+      <p class="small-title">Graduation 2026</p>
+      <h1>Congratulations,<br />Ghala</h1>
+
+      <section class="message">
+        <p>
+          I just wanted to say congratulations on graduating high school. I know things between us are not exactly perfect right now, but that does not change the fact that I am genuinely proud of you. This is a big moment, and I hope you let yourself feel every bit of it.
+        </p>
+        <br />
+        <p>
+          I am honestly ecstatic for you. You made it through something that took years of effort, patience, stress, growth, and a lot more than people probably even know. No matter where life takes you next, I hope you keep becoming everything you are meant to be.
+        </p>
+        <br />
+        <p>
+          Even with everything being complicated, I still care, and I wanted you to know that I am happy for you. You deserve to be celebrated today. Congratulations, for real.
+        </p>
+      </section>
+
+      <p class="signature">— Comar</p>
+    </div>
+  </main>
+</body>
+</html>
